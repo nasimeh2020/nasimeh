@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="no" dir="1tr">
+<head>
+  <meta charset="utf-8">
+  <title> Din Stemme </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <meta name="viewport" content="width=device-width, intial-scale=1.0">
+</head>
+<body>
+  <div class="header">
+    <div class="_inner_header">
+      <div class="logo_container">
+        <h1>Valg<span>2010</span></h1>
+      </div>
+    </div>
+  </div>
+
+
+  <input type="checkbox" id="check">
+  <label for="check">
+    <i class="fas fa-bars" id="btn"></i>
+    <i class="fas fa-times" id="cancel"></i>
+  </label>
+  <div class="sidebar">
+    <header> Meny </header>
+    <!--<a class="active" href="#"><i class="fas fa-qrcode"></i><span> menu </span></a> --> <!-- Trenger vi dette?  -->
+    <a href="index.html"><i class="fas fa-link"></i><span> Home </span></a>
+    <a href="logginn.html"><i class="fas fa-stream"></i><span> Logg Inn </span></a>
+    <a href="avstemning.html"><i class="fas fa-calendar"></i><span> Avstemming </span></a>
+    <a href="registrering.html"><i class="fas fa-sliders-h"></i><span> Registrering </span></a>
+    <a href="nominering.html"><i class="fas fa-sliders-h"></i><span> Nominering  </span></a>
+
+  </div>
+
+
+  <div class="column">
+    <h2>kandidat 2</h2>
+    <img id="myImg" src="bilde2.jpg" alt="bilde2" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+    <p>Her kan du skrive informasjon om kandidat 2.</p>
+  </div>
+
+  <div class="column">
+    <h2>kandidat 1</h2>
+    <img id="myImg" src="bilde4.jpg" alt="bilde4" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+    <p>Her kan du skrive informasjon om kandidat 1.</p>
+  </div>
+
+
+  <div class="column">
+    <h2>Kandidat 4</h2>
+    <img id="myImg" src="bilde5.jpg" alt="bilde5" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+    <p>Her kan du skrive informasjon om kandidat 4.</p>
+  </div>
+
+  <div class="column">
+    <h2>Kandidat 3</h2>
+    <img id="myImg" src="bilde1.jpg" alt="bilde1" style="width:100%;max-width:300px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
+    <p>Her kan du skrive informasjon om kandidat 3.</p>
+  </div>
+</div>
+
+</body>
+<div id="footer">
+  <footer >
+  Laget av Vapp20G13</footer>
+</div>
+
+
+</html>

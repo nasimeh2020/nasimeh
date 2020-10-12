@@ -1,0 +1,328 @@
+@import url('https://kit.fontawesome.com/a076d05399.js') ;
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+.sidebar{
+  position: fixed;
+  left: -240px;
+  width: 240px;
+  height: 100%;
+  background: salmon;
+  transition: all .5s ease;
+}
+
+.sidebar header{
+  color: white;
+  font-size: 28px;
+  line-height: 70px;
+  text-align: center;
+  background: black;
+  user-select: none;
+  font-family: 'montserrat', sans-serif;
+}
+
+.sidebar a{
+  display: block;
+  color:white;
+  height:65px;
+  width: 100%;
+  line-height: 60px;
+  padding-left: 30px;
+  border-bottom: 1px solid rgba(255,255, 255, .1);
+  border-top: 1px solid black;
+  border-left: 5px solid transparent;
+  box-sizing: border-box;
+  font-family: 'open sans', sans-serif;
+}
+
+a:hover, a.active{
+  border-left: 5px solid Brown;
+  color: Brown;
+}
+
+.sidebar a i{
+  font-size: 23px;
+  margin-right: 16px;
+}
+
+.sidebar a span{
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+#check
+{
+  display: none;
+}
+
+label #btn, label #cancel{
+  position: absolute;
+  cursor: pointer;
+  background: Brown;
+  height: 45px;
+  width: 45px;
+  text-align: center;
+  line-height: 45px;
+  color: white;
+  font-size: 20px;
+  border-radius: 5px;
+  margin: 15px 30px;
+  border: 1px solid white;
+  transition: all .5s ease;
+}
+
+label #cancel{
+  opacity: 0;
+  visibility: hidden;
+}
+
+#check:checked ~ label #btn{
+  margin-left: 245px;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#check:checked ~ label #cancel{
+  margin-left: 245px;
+  opacity: 1;
+  visibility: visible;
+}
+
+#check:checked ~ .sidebar{
+  left: 0;
+}
+
+@media (max-width: 860px) {
+  .sidebar{
+    height: auto;
+    width: 70px;
+    left: 0;
+    margin: 100px 0;
+  }
+  header, #btn, #cancel{
+    display: none;
+  }
+
+  span{
+    position: absolute;
+    margin-left: 23px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  .sidebar a i{
+    margin-left:-10px;
+  }
+  a:hover{
+    width: 200px;
+    background: inherit;
+  }
+  .sidebar a:hover span{
+    opacity: 1;
+    visibility: visible;
+  }
+
+}
+
+.header{
+  width: 100%;
+  height: 80px;
+  display: block;
+  background-color: black;
+}
+
+._inner_header{
+  width: 800px;
+  height: 100%;
+  display: block;
+  margin: 0 auto;
+  background-color: black;
+}
+
+.logo_container{
+  height: 100%;
+  display: table;
+  float: left;
+}
+
+.logo_container h1{
+  color: white;
+  height: 100%;
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 32px;
+  font-weight: 100;
+}
+
+.logo_container h1 span{
+  font-weight: 1000;
+}
+
+.column {
+  float: right;
+  width: 33.33%;
+  padding: 25px;
+}
+
+.column p{
+  margin: auto;
+  width: auto;
+  height: auto;
+}
+
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)}
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
+
+#footer
+{
+  position:absolute;
+   bottom:0;
+   width:100%;
+   height:30px;   /* Height of the footer */
+   background: pink;
+   text-align: center;
+}
+
+/* LILLIAN SITT FORSLAG PÅ CSS PÅ LINKENE*/
+
+.grid-container {
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  background-color: #2196F3;
+  padding: 50px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+
+#epost
+{
+  font-family: serif;
+  font-size: 40px;
+  float: left;
+}
+#passord
+{
+  font-family: serif;
+  font-size: 40px;
+  float: left;
+}
+.knapp
+{
+  width: 10%;
+  height: 25px;
+  border: solid;
+  border-color: blue;
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: lightblue;
+  position:
+}
+
+.registrering
+{
+  width: 50%;
+  padding-left: 15%;
+  margin-top: 5px;
+  margin-left: 5%;
+}
+.grid-item1 {
+  width: 50%;
+  height: 30%;
+  padding-left: 15%;
+  margin-top: 5%;
+  margin-left: 5%;
+  font-size: 30px;
+}
